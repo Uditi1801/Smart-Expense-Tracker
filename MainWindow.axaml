@@ -1,0 +1,104 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="SmartExpenseTrackerGUI.MainWindow"
+        Title="Smart Expense Tracker"
+        Width="950"
+        Height="720"
+        Background="#111827">
+
+    <ScrollViewer>
+        <StackPanel Margin="25" Spacing="18">
+
+            <TextBlock Text="SMART EXPENSE TRACKER 💸"
+                       FontSize="30"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       HorizontalAlignment="Center"/>
+
+            <Border Background="#1F2937"
+                    CornerRadius="16"
+                    Padding="20">
+
+                <StackPanel Spacing="14">
+
+                    <ComboBox Name="TypeBox" SelectedIndex="0">
+                        <ComboBoxItem Content="Income"/>
+                        <ComboBoxItem Content="Expense"/>
+                    </ComboBox>
+
+                    <ComboBox Name="CategoryBox"/>
+
+                    <TextBox Name="AmountBox"
+                             Watermark="Enter amount"/>
+
+                    <TextBox Name="NoteBox"
+                             Watermark="Enter note"/>
+
+                    <StackPanel Orientation="Horizontal"
+                                Spacing="10">
+
+                        <Button Name="AddButton"
+                                Content="Add Transaction"
+                                Width="170"/>
+
+                        <Button Name="DeleteButton"
+                                Content="Delete Selected"
+                                Width="170"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+
+            <StackPanel Orientation="Horizontal"
+                        Spacing="15"
+                        HorizontalAlignment="Center">
+
+                <Border Background="#2563EB"
+                        CornerRadius="14"
+                        Padding="20"
+                        Width="220">
+
+                    <TextBlock Name="IncomeText"
+                               Text="Income: ₹0"
+                               FontSize="18"
+                               FontWeight="Bold"
+                               Foreground="White"/>
+                </Border>
+
+                <Border Background="#DC2626"
+                        CornerRadius="14"
+                        Padding="20"
+                        Width="220">
+
+                    <TextBlock Name="ExpenseText"
+                               Text="Expenses: ₹0"
+                               FontSize="18"
+                               FontWeight="Bold"
+                               Foreground="White"/>
+                </Border>
+
+                <Border Background="#16A34A"
+                        CornerRadius="14"
+                        Padding="20"
+                        Width="220">
+
+                    <TextBlock Name="BalanceText"
+                               Text="Balance: ₹0"
+                               FontSize="18"
+                               FontWeight="Bold"
+                               Foreground="White"/>
+                </Border>
+
+            </StackPanel>
+
+            <TextBlock Text="Transaction History"
+                       FontSize="22"
+                       FontWeight="Bold"
+                       Foreground="White"/>
+
+            <ListBox Name="TransactionList"
+                     Height="300"/>
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>

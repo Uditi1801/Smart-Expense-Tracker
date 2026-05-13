@@ -1,0 +1,30 @@
+[
+  {
+    "Type": "Income",
+    "Category": "Food",
+    "Amount": 1000,
+    "Note": "haha",
+    "Date": "2026-05-13T21:15:49.359861+05:30"
+  },
+  {
+    "Type": "Income",
+    "Category": "Study",
+    "Amount": 100000,
+    "Note": "Yay added money for study",
+    "Date": "2026-05-13T22:28:07.276669+05:30"
+  },
+  {
+    "Type": "Expense",
+    "Category": "Travel",
+    "Amount": 5000,
+    "Note": "I am going to travel",
+    "Date": "2026-05-13T22:28:25.65631+05:30"
+  },
+  {
+    "Type": "Income",
+    "Category": "Entertainment",
+    "Amount": 7000,
+    "Note": "Netflix subscription",
+    "Date": "2026-05-13T22:28:49.259993+05:30"
+  }
+]
